@@ -41,7 +41,10 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+
+
 //Task 1 - selectors
+
 let navigationText = document.querySelectorAll('nav a');
 let headerText = document.querySelector('h1');
 let circleImg = document.getElementById("cta-img");
@@ -99,5 +102,28 @@ phoneNumber.innerText = siteContent["contact"]["phone"];
 email.innerText = siteContent["contact"]["email"];
 
 footerText.innerText = siteContent["footer"]["copyright"];
+
+//Task 3 - Add new content
+
+navigationText.forEach(element => {
+  element.style.color = 'green';
+})
+
+const parent = document.querySelector('nav');
+let firstNav = document.createElement('a');
+let lastNav = document.createElement('a');
+firstNav.textContent = "Home";
+lastNav.textContent = "Info";
+parent.prepend(firstNav);
+parent.appendChild(lastNav);
+firstNav.style.color = 'green';
+lastNav.style.color = 'green';
+
+
+
+
+
+
+
 
 
