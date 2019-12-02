@@ -119,9 +119,14 @@ parent.appendChild(lastNav);
 firstNav.style.color = 'green';
 lastNav.style.color = 'green';
 
+//Stretch - added additional styles to H4's
 
-
-
+featuresH4.style.color = 'red';
+aboutH4.style.color = 'blue';
+servicesH4.style.color = 'green';
+productH4.style.color = 'orange';
+visionH4.style.color = 'purple';
+contactH4.style.color = 'indigo';
 
 
 
