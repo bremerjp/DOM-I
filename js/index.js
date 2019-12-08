@@ -76,13 +76,6 @@ let footerText = document.querySelector("footer p");
 const values = Object.values(siteContent.nav);
 const linkElements = Array.from(navigationText);
 
-// navigationText[0].innerText = siteContent["nav"]['nav-item-1'];
-// navigationText[1].innerText = siteContent["nav"]['nav-item-2'];
-// navigationText[2].innerText = siteContent["nav"]['nav-item-3'];
-// navigationText[3].innerText = siteContent["nav"]['nav-item-4'];
-// navigationText[4].innerText = siteContent["nav"]['nav-item-5'];
-// navigationText[5].innerText = siteContent["nav"]['nav-item-6'];
-
 headerText.innerHTML = siteContent["cta"]["h1"];
 circleImg.setAttribute('src', siteContent["cta"]["img-src"]);
 codeImg.setAttribute('src', siteContent["main-content"]['middle-img-src'])
