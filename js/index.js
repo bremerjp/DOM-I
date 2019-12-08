@@ -102,7 +102,6 @@ footerText.innerText = siteContent["footer"]["copyright"];
 for (let index = 0; index < 6; index++) {
   linkElements[index].innerText = values[index];
 }
-
 //Task 3 - Add new content
 
 navigationText.forEach(element => {
@@ -127,8 +126,3 @@ servicesH4.style.color = 'green';
 productH4.style.color = 'orange';
 visionH4.style.color = 'purple';
 contactH4.style.color = 'indigo';
-
-
-
-
-
