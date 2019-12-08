@@ -73,12 +73,8 @@ let footerText = document.querySelector("footer p");
 
 //Task 2 - Update HTML
 
-navigationText[0].innerText = siteContent["nav"]['nav-item-1'];
-navigationText[1].innerText = siteContent["nav"]['nav-item-2'];
-navigationText[2].innerText = siteContent["nav"]['nav-item-3'];
-navigationText[3].innerText = siteContent["nav"]['nav-item-4'];
-navigationText[4].innerText = siteContent["nav"]['nav-item-5'];
-navigationText[5].innerText = siteContent["nav"]['nav-item-6'];
+const values = Object.values(siteContent.nav);
+const linkElements = Array.from(navigationText);
 
 headerText.innerHTML = siteContent["cta"]["h1"];
 circleImg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -103,6 +99,9 @@ email.innerText = siteContent["contact"]["email"];
 
 footerText.innerText = siteContent["footer"]["copyright"];
 
+for (let index = 0; index < 6; index++) {
+  linkElements[index].innerText = values[index];
+}
 //Task 3 - Add new content
 
 navigationText.forEach(element => {
@@ -114,8 +113,8 @@ let firstNav = document.createElement('a');
 let lastNav = document.createElement('a');
 firstNav.textContent = "Home";
 lastNav.textContent = "Info";
-parent.prepend(firstNav);
-parent.appendChild(lastNav);
+// parent.prepend(firstNav);
+// parent.appendChild(lastNav);
 firstNav.style.color = 'green';
 lastNav.style.color = 'green';
 
@@ -127,8 +126,3 @@ servicesH4.style.color = 'green';
 productH4.style.color = 'orange';
 visionH4.style.color = 'purple';
 contactH4.style.color = 'indigo';
-
-
-
-
-
